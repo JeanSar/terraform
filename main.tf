@@ -12,12 +12,11 @@ resource "openstack_networking_subnet_v2" "asbd-subnet-front" {
     start = "10.245.199.100"
     end   = "10.245.199.100"
   }
-
+}
 resource "openstack_compute_instance_v2" "vm_test" {
   name        = "une premiere instance"
   image_name  = var.image_name
   flavor_name = var.flavor_name
   # bien penser à mettre le nom de votre clé
   key_pair    = "votre clef"
-}
 }

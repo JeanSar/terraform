@@ -13,8 +13,8 @@ resource "openstack_networking_subnet_v2" "asbd-subnet-front" {
     end   = "10.245.199.100"
   }
 }
-resource "openstack_compute_instance_v2" "vm-squeeze" {
-  name        = "vm-squeeze"
+resource "openstack_compute_instance_v2" "vm-squeeze-test-02" {
+  name        = "vm-squeeze-test-02"
   image_name  = var.image_name
   flavor_name = var.flavor_name
   key_pair    = "Key_TP_ASBD_MJ"

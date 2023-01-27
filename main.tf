@@ -13,10 +13,9 @@ resource "openstack_networking_subnet_v2" "asbd-subnet-front" {
     end   = "10.245.199.100"
   }
 }
-resource "openstack_compute_instance_v2" "vm-test-squeeze" {
-  name        = "une_premiere_instance"
+resource "openstack_compute_instance_v2" "vm-squeeze" {
+  name        = "vm-squeeze-instance-01"
   image_name  = var.image_name
   flavor_name = var.flavor_name
-  # bien penser à mettre le nom de votre clé
-  key_pair    = "votre clef"
+  key_pair    = "Key_TP_ASBD_MJ"
 }

@@ -10,7 +10,7 @@ resource "openstack_networking_subnet_v2" "asbd-subnet-front" {
   dns_nameservers = ["10.10.10.10" ,"10.10.10.11"]
   allocation_pool {
     start = "10.245.199.100"
-    end   = "10.245.199.100"
+    end   = "10.245.199.150"
   }
 }
 
